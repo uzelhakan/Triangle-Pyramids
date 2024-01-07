@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+:root{
+    --Bg-color: #fdfdfd;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--Bg-color);
+    background-repeat: no-repeat;
+    background-attachment: static;
+    background-position-y: 30px
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+.tabActive {
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 1s;}
+.--bodyTab--box {
+    user-select: none;}
+.--bodyTab--box p {
+    text-align: justify;}
+/*      
+        HEADER
+                    */
+.Nav--flex {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;}
+.Nav--flex > ul {
+    position: relative;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;}
+.Nav--flex > ul li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin: 5px 10px;
+    list-style: none;}
+.Nav--flex > ul li button {
+    position: relative;
+    display:flex;
+    width: 100%;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-radius: 50px 50px 5px 5px;
+    border: 1px solid transparent;
+    background: #1aa5e6;
+    color: #fff;
+    transition: all 1s;
+    overflow: hidden;}
+.Nav--flex > ul li button:hover {
+    border-radius: 2px;
+    border: 1px solid #1aa5e6;
+    background: transparent;
+    color: #1aa5e6;}
+.changeColor{
+    position: relative;
+    display: flex;
+    margin-top: 20px;}
+.applyBtn{
+    position: absolute;
+    border-radius: 0%;
+    width: 220px;
+    height: 27px;
+    border: none;
+    margin-left: 50px;
+    color: white;
+    animation: colorBtn 10s infinite;}
+@keyframes colorBtn {
+    0%{background-color:#ffffff}
+    25%{background-color:#22a9e7}
+    50%{background-color:#470aaa}
+    75%{background-color:#aa0a1f}
+    100%{background-color:#aa920a}}
+/*      
+        Pyramid
+           1U         */
+.triangle1u-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;}
+.triangle1u-box {
+    transform: rotate(0deg);}
+.trapezoid1u:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 23.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 11.75vw solid transparent;
+    border-right: 11.75vw solid transparent;
+    border-bottom: 23.5vw solid #0a77aa;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1u:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1u:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1u:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 49vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1u:nth-child(5) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 57.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #22a9e7;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1u:nth-child(6) {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    width: 66vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #2bb4f3;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1u h5 {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 20px;
+    color: white;}
+.trapezoid1u h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 180px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;}
+.trapezoid1u p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 40px;
+    color: white;
+    padding: 5px;}
+/*      
+        Pyramid
+           1D         */
+.triangle1d-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;}
+.triangle1d-box {
+    transform: rotate(180deg);}
+.trapezoid1d:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 23.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 11.75vw solid transparent;
+    border-right: 11.75vw solid transparent;
+    border-bottom: 23.5vw solid #0a77aa;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1d:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1d:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoid1d:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 49vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1d:nth-child(5) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 57.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #22a9e7;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1d:nth-child(6) {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    width: 66vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #2bb4f3;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 7px;}
+.trapezoid1d h5 {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 60px;
+    color: white;
+    transform: rotate(180deg);}
+.trapezoid1d h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 180px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;
+    transform: rotate(180deg);}
+.trapezoid1d p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 5px;
+    transform: rotate(180deg);}
+/*      
+        Pyramid
+          2U        */
+.triangle2u-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;}
+.triangle2u-box {
+    transform: rotate(0deg);}
+.trapezoid2u:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 23.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 11.75vw solid transparent;
+    border-right: 11.75vw solid transparent;
+    border-bottom: 23.5vw solid #0a77aa;
+    justify-self: center;  
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 10;
+    padding-bottom: 5px;}
+.trapezoid2u:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;  
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 9;
+    padding-bottom: 5px;}
+.trapezoid2u:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 8;
+    padding-bottom: 5px;}
+.trapezoid2u:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 49vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 7;
+    padding-bottom: 7px;}
+.trapezoid2u:nth-child(5) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 57.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #22a9e7;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 6;
+    padding-bottom: 7px;}
+.trapezoid2u:nth-child(6) {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    width: 66vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #2bb4f3;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 5;
+    padding-bottom: 7px;}
+.trapezoid2u h5 {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 30px;
+    color: white;}
+.trapezoid2u h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 180px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;}
+.trapezoid2u p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 50px;
+    color: white;
+    padding: 5px;}
+/*      
+        Pyramid
+          2D        */
+.triangle2d-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;}
+.triangle2d-box {
+    transform: rotate(180deg);}
+.trapezoid2d:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 23.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 11.75vw solid transparent;
+    border-right: 11.75vw solid transparent;
+    border-bottom: 23.5vw solid #0a77aa;
+    justify-self: center;  
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 10;
+    padding-bottom: 5px;}
+.trapezoid2d:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;  
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 9;
+    padding-bottom: 5px;}
+.trapezoid2d:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 8;
+    padding-bottom: 5px;}
+.trapezoid2d:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 49vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 7;
+    padding-bottom: 7px;}
+.trapezoid2d:nth-child(5) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 57.5vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #22a9e7;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 6;
+    padding-bottom: 7px;}
+.trapezoid2d:nth-child(6) {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    width: 66vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #2bb4f3;
+    justify-self: center;
+    margin:-10px auto;
+    outline: 15px solid var(--Bg-color);
+    border-radius:  0px 0px 35px 35px;
+    z-index: 5;
+    padding-bottom: 7px;}
+.trapezoid2d h5 {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 60px;
+    color: white;
+    transform: rotate(180deg);}
+.trapezoid2d h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 180px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;
+    transform: rotate(180deg);}
+.trapezoid2d p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 30px;
+    color: white;
+    padding: 5px;
+    transform: rotate(180deg);}
+/*      
+        Pyramid
+        Double      */
+.triangleDouble-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;}
+.triangleD-box {
+    position: relative;
+    left: 200px;}
+.trapezoidD h5 {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 5px;
+    color: white;}
+.trapezoidD h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 100px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;}
+.trapezoidD p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 5px;}
+.trapezoidD:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 16vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+    border-bottom: 16vw solid #22a9e7;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 24vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD:nth-child(5) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 48vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0a77aa;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD2 h5 {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 20px;
+    margin-top: 80px;
+    color: white;
+    transform: rotate(180deg);}
+.trapezoidD2 h4 {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 100px;
+    margin-left: -8px;
+    color: white;
+    text-align: center;
+    transform: rotate(180deg);}
+.trapezoidD2 p {
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 5px;
+    transform: rotate(180deg);}
+.triangleD2-box {
+    transform: rotate(180deg);
+    margin-right: 200px;}
+.trapezoidD2:nth-child(1) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 16vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+    border-bottom: 16vw solid #22a9e7;
+    justify-self: center;  
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD2:nth-child(2) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 24vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #1b9edb;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;}
+.trapezoidD2:nth-child(3) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 32vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #128bc4;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;
+    }
+.trapezoidD2:nth-child(4) {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 40vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0c80b6;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;
+    }
+.trapezoidD2:nth-child(5) {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    width: 48vw; /* Dörtgenin genişliği */
+    background-color: transparent; /* Dörtgenlerin rengi */
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid #0a77aa;
+    justify-self: center;
+    margin:auto;
+    padding-bottom: 5px;
+    }

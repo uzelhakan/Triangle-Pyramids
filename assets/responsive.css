@@ -1,0 +1,130 @@
+/*
+**Responsive Css Page Arrangement**
+
+--Mix
+**/
+
+/**     Pyramid
+          1U        **/
+@media screen and (max-width: 999px) {
+    .triangle1u-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 30px;} 
+    .triangle1u-box h4{
+        margin-top: 120px;}
+    .triangle1u-box h5 {
+        font-size: 1.5vw;
+        margin-top: 10px;}}
+@media screen and (max-width: 666px) {
+    .--bodyTab--box p, 
+    .--bodyTab--box h5,
+    .--bodyTab--box h4 {
+        display: none;}}
+
+/**     Pyramid
+          1D        **/
+@media screen and (max-width: 999px) {
+    .triangle1d-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 10px;} 
+    .triangle1d-box h4{
+        margin-top: 120px;}
+    .triangle1d-box h5 {
+        font-size: 1.5vw;
+        margin-top: 40px;}}
+@media screen and (max-width: 666px) {
+    .--bodyTab--box p, 
+    .--bodyTab--box h5,
+    .--bodyTab--box h4 {
+        display: none;}}
+/**     Pyramid
+          2U        **/
+@media screen and (max-width: 999px) {
+    .triangle2u-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 44px;} 
+    .triangle2u-box h4{
+        margin-top: 120px;}
+    .triangle2u-box h5 {
+        font-size: 1.5vw;
+        margin-top: 30px;}}
+@media screen and (max-width: 768px){
+    .trapezoid2u:nth-child(n){
+        outline: 10px solid var(--Bg-color);}
+    .triangle2u-box p {
+        margin-top: 40px;}
+    .triangle2u-box h5{
+        margin-top: 22px;}}
+@media screen and (max-width: 666px) {
+    .--bodyTab--box p, 
+    .--bodyTab--box h5,
+    .--bodyTab--box h4 {
+        display: none;}}
+@media screen and (max-width: 425px){
+    .trapezoid2u:nth-child(n){
+        outline: 5px solid var(--Bg-color);}}
+/**     Pyramid
+          2D        **/
+@media screen and (max-width: 999px) {
+    .triangle2d-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 30px;} 
+    .triangle2d-box h4{
+        margin-top: 120px;}
+    .triangle2d-box h5 {
+        font-size: 1.5vw;
+        margin-top: 44px;}}
+@media screen and (max-width: 768px){
+    .trapezoid2d:nth-child(n){
+        outline: 10px solid var(--Bg-color);}
+    .triangle2d-box p {
+        margin-top: 40px;}
+    .triangle2d-box h5{
+        margin-top: 22px;}}
+@media screen and (max-width: 666px) {
+    .--bodyTab--box p, 
+    .--bodyTab--box h5,
+    .--bodyTab--box h4 {
+        display: none;}}
+@media screen and (max-width: 425px){
+    .trapezoid2d:nth-child(n){
+        outline: 5px solid var(--Bg-color);}}
+/**     Pyramid
+         Double      **/
+@media screen and (max-width: 999px) {
+    .triangleD-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 30px;} 
+    .triangleD2-box p{
+        font-size: 1.5vw;
+        line-height: 1.4vw;
+        margin-top: 11px;} 
+    .triangleD-box h4,
+    .triangleD2-box h4{
+        margin-top: 90px;}
+    .triangleD-box h5{
+        font-size: 1.5vw;
+        margin-top: 10px;}
+    .triangleD2-box h5 {
+        font-size: 1.5vw;
+        margin-top: 55px;}}
+@media screen and (max-width: 999px) {
+    .triangleD-box {
+        left: 100px;}
+    .triangleD2-box {
+        margin-right: 100px;}}
+@media screen and (max-width: 666px) {
+    .--bodyTab--box p, 
+    .--bodyTab--box h5,
+    .--bodyTab--box h4 {
+        display: none;}}
+@media screen and (max-width: 425px) {
+    .triangleD-box {
+        left: 10px;}
+    .triangleD2-box {
+        margin-right: 10px;}}
